@@ -6,29 +6,26 @@
     margin-top: 0;
 }
 
-a{color: #373737;}
+a, body{color: #373737;}
 
-body {
-    font: 1.3rem/1.2 'Roboto', sans-serif;
+body, ul {
     padding: 0;
     margin: 0;
-    color: #373737;
+    font: 1.3rem/1.2 'Roboto', sans-serif;
 }
 
 img{max-width: 100%;}
 
 ul{
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .btn{
     display: inline-block;
-    border-radius: 5em;
+    border-radius: .8em;
     background-color: #6fc247;
     color: #fff;
-    padding: .5em 1.3em;
+    padding: .5em 1em;
 }
 
 .nav_link:hover,
@@ -57,50 +54,81 @@ ul{
 }
 
 header{
-    padding: 1.5em 0;
     box-shadow: 0 0 7px #373737;
 }
 
-header,
-.hero{text-align: center;}
+header, 
+footer{padding: 1.5em 0;}
 
-section{padding: 2em 0;}
+header,
+.hero,
+.sponsor_text,
+.sponsor img,
+footer{text-align: center;}
+
+.hero{padding-top: 3em;}
 
 .nav_item{margin-top: 1em}
 header .btn-cta{margin-top: 2em}
 
 .hero_text{font-size: 2em;}
+.cta{margin-bottom: 2em;}
 
+section + section{margin-top: 2.5em;}
 
+.sponsors .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.sponsors .col-img{
+    height: 117px;
+    width: 211px;
+    background-color: #f9f9f9;
+    margin-top: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us{
+    background-color: #000;
+    color: #fff;
+    padding: 1.5em 0;
+}
+
+.about-us .row{margin-top: 2.5em;}
+.intro{
+    width: 80%;
+}
+.why-us .intro{margin: 0 auto;}
 
 @media (min-width: 800px) {   
-    header{text-align: 0;} 
-    header .row,
-    .nav,
-    .nav_list,
-    .hero .row{
-        display: flex;
-    }
+    .container{width: 75%;}
+    header{text-align: 0;}
+    
+    .col{width: 100%;}
+    .row, .nav, 
+    .nav_list{display: flex;}
 
     header .row{
         justify-content: space-between;
         align-items: center;
     }
-    .nav_list{
-        gap: 1.4em;
-    }
+    .nav_list,
+    .about-us .row,
+    .why-us .row{gap: 1.4em;}
 
     .nav_item,
-    .btn-cta{margin-top:0}
-    .hero{
-        width: 80%;
-        margin: 0 auto;
-    }
+    .btn-cta,
+    header .btn-cta{margin-top:0}
+
     .hero_text{
         font-size: 2.5em;
         margin-bottom: .5em;
     }
-    .hero p{
-        margin-bottom: 1.5em;}
+    .hero p{margin-bottom: 1.5em;}
+
 }
