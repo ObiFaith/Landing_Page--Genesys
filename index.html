@@ -10,9 +10,13 @@
 <body>
     <header>
         <div class="container row">
-            <a href="index.html" class="logo">
-                <img src="./Img/logo.png" alt="Website Logo">
-            </a>
+            <div class="flex">
+                <a href="index.html" class="logo">
+                    <img src="./Img/logo.png" alt="Website Logo">
+                </a>
+                <img class="toggle_menu" src="./Img/icon-menu.svg" alt="Navbar Menu">
+            </div>
+            
             <nav class="nav">
                 <ul class="nav_list">
                     <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
@@ -20,15 +24,14 @@
                     <li class="nav_item"><a href="#" class="nav_link">Your Work</a></li>
                     <li class="nav_item"><a href="#" class="nav_link">Company</a></li>
                 </ul>
+                <a href="#" class="btn nav-btn">Request a Demo</a>
             </nav>
-            <a href="#" class="btn btn-cta">Request a Demo</a>
         </div>
     </header>
     <main>
         <section class="container">
             <div class="hero">
-                <h2 class="hero_text">The World Leading Business <br>
-                     Valuation Software
+                <h2 class="hero_title">The World Leading Business Valuation Software
                 </h2>
                 <p>Valutico provides the financial services industry and valuation experts with data-driven tools to perform accurate company valuations faster and more accurately than ever before.</p>
                 <div class="cta">
@@ -113,5 +116,7 @@
     <footer>
         <a href="#" class="btn btn-cta">Request a Demo</a>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
